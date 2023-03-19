@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f1e1e;
+    color: white;
+}
+header{
+    margin: 1.4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo{
+    padding-left: 2rem;
+}
+header ul li{
+    padding-right: 2rem;
+}
+main{
+    position: relative;
+    height: 99vh;
+    width: 100%;
+    background-image: url(./images/dining.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.tag1{
+    font-size: 1.5rem;
+    position: absolute;
+    top:15rem;
+    width: 50vw;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+}
+.tag1 h2,.tag1 #city-search{
+    position: relative;
+    right: -10%;
+    align-self: center;
+}
+.tag1 #city-search{
+    margin-top: 1.4rem;
+    border: 0.1rem green solid;
+    height: 1.8rem;
+    padding: 1.4rem;
+    width: 60%;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    border-radius: 1rem;
+}
+ul li{
+    list-style: none;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+li:hover{
+    color:yellow;
+}
